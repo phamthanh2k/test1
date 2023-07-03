@@ -1,0 +1,128 @@
+@import "./common.scss";
+
+.sp__tabs {
+  display: flex;
+  justify-content: center;
+  width: 1008px;
+}
+.sp__tab {
+  display: flex;
+  border: 2px solid $color-blue;
+  border-radius: 6px;
+  background-color: $color-white;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  height: 88px;
+}
+.sp__accordions {
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.sp1 {
+  .col-12 {
+    display: flex;
+    justify-content: center;
+  }
+  background-image: url(../img/plan/plan2-bgImg.png);
+  &__tabs {
+    justify-content: center;
+    column-gap: 24px;
+    margin-bottom: 88px;
+  }
+  &__tab {
+    padding-left: 40px;
+    font-family: ZenKakuGothicNew;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 500;
+  }
+  &__tab-icon {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+  &__dropdown {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+  }
+  &__texts {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+  }
+
+  &__accordion {
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 24px;
+  }
+  &__text1 {
+    line-height: 40px;
+    font-family: ZenOldMincho-Bold;
+    font-size: $title-xl;
+    color: $color-blue;
+  }
+  &__text2 {
+    line-height: 24px;
+    font-size: $text-content;
+  }
+}
+.sp2 {
+  .col-12 {
+    display: flex;
+    justify-content: center;
+  }
+  &__accordion {
+    justify-content: space-between;
+    padding-left: 87px;
+    padding-right: 24px;
+  }
+  &__text {
+    line-height: 24px;
+    font-size: $text-content;
+  }
+}
+
+.sp3 {
+  background-image: url(../img/plan/plan2-bgImg.png);
+  .col-12 {
+    display: flex;
+    justify-content: center;
+  }
+  &__accordions {
+    margin-bottom: 75px;
+  }
+  &__accordion {
+    justify-content: space-between;
+    padding-left: 87px;
+    padding-right: 24px;
+  }
+  &__text {
+    line-height: 24px;
+    font-size: $text-content;
+  }
+  &__buttons {
+    column-gap: 45px;
+  }
+  &__button {
+    display: flex;
+    width: 100%;
+    padding: 16px 0;
+    justify-content: center;
+    align-items: center;
+    &:nth-child(1) {
+      column-gap: 37px;
+    }
+
+    &:nth-child(2) {
+      column-gap: 12px;
+    }
+
+    &:nth-child(3) {
+      column-gap: 26px;
+    }
+  }
+}

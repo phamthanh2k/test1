@@ -1,126 +1,6 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./common.scss";
 
-@font-face {
-  font-family: yugotthib;
-  src: url(../font/fonts/yugothib.ttf);
-}
-$title-post: 40px;
-$title-xl: 31px;
-$title-l: 24px;
-$text-content: 18px;
-$text-caption: 14px;
-
-$bg-white: #ffffff;
-$inlne_block: inline-block;
-$fl_left: left;
-$fl_right: right;
-$color-white: #ffffff;
-$color-blue: #6aa0db;
-
-$unset: unset;
-
-// the chung
-
-img {
-  max-width: 100%;
-  width: -webkit-fill-available;
-}
-// start lop chung
-body {
-  font-size: 18px !important;
-  overflow-x: hidden;
-  font-family: yugotthib !important;
-}
-.heading {
-  font-size: $title-xl;
-  font-weight: 400;
-  line-height: 41px;
-  margin-bottom: 104px;
-}
-
-.column-justify-space-evenly {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-}
-.justify-space-between {
-  display: flex;
-  justify-content: space-between;
-}
-.align-content-between {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-}
-.button {
-  background-color: #6aa0db;
-  color: #ffffff;
-  font-size: 18px;
-  font-style: YuGothic;
-  border-radius: 28px;
-}
-.flex {
-  display: flex;
-  align-items: center;
-}
-.vertical-center {
-  vertical-align: middle;
-}
-.text-center {
-  text-align: center;
-}
-.overflow {
-  overflow-x: scroll;
-}
-.mr-left-8 {
-  margin-left: 8;
-}
-.mr-left-50 {
-  margin-left: 50px;
-}
-.pd-sec {
-  padding-top: 104px;
-  padding-bottom: 80px;
-}
-
-.contact {
-  color: $color-blue;
-  line-height: 46px;
-  font-size: 34px;
-}
-.contact--black {
-  font-size: 14px;
-  text-align: end;
-}
-// end lop chung
-
-// star hover chung
-.text-hover {
-  position: relative;
-  font-size: 20px;
-}
-.text-hover::after {
-  content: "";
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  position: absolute;
-  border-bottom: 2px solid #84baea;
-  padding-bottom: 5px;
-  width: 20%;
-  left: 50%;
-  transform: translate(-50%);
-  transition: width 1s ease;
-}
-.text-hover:hover::after {
-  width: 100%;
-}
-// end hover chung
-
-body {
-  padding-top: 88px;
-}
 .header {
   display: flex;
   align-items: center;
@@ -609,6 +489,7 @@ body {
     }
   }
 }
-
 @import "./customs.scss";
+@import "./__plan.scss";
+@import "./support";
 @import "./rws.scss";
